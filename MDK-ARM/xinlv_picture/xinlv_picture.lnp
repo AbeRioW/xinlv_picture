@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"xinlv_picture\startup_stm32f103xb.o"
+"xinlv_picture\oled.o"
+"xinlv_picture\max30102.o"
+"xinlv_picture\algorithm.o"
+"xinlv_picture\main.o"
+"xinlv_picture\gpio.o"
+"xinlv_picture\i2c.o"
+"xinlv_picture\stm32f1xx_it.o"
+"xinlv_picture\stm32f1xx_hal_msp.o"
+"xinlv_picture\stm32f1xx_hal_gpio_ex.o"
+"xinlv_picture\stm32f1xx_hal_i2c.o"
+"xinlv_picture\stm32f1xx_hal.o"
+"xinlv_picture\stm32f1xx_hal_rcc.o"
+"xinlv_picture\stm32f1xx_hal_rcc_ex.o"
+"xinlv_picture\stm32f1xx_hal_gpio.o"
+"xinlv_picture\stm32f1xx_hal_dma.o"
+"xinlv_picture\stm32f1xx_hal_cortex.o"
+"xinlv_picture\stm32f1xx_hal_pwr.o"
+"xinlv_picture\stm32f1xx_hal_flash.o"
+"xinlv_picture\stm32f1xx_hal_flash_ex.o"
+"xinlv_picture\stm32f1xx_hal_exti.o"
+"xinlv_picture\system_stm32f1xx.o"
+--strict --scatter "xinlv_picture\xinlv_picture.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "xinlv_picture.map" -o xinlv_picture\xinlv_picture.axf
